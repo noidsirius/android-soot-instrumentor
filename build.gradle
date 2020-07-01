@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'edu.seal.uci'
+group 'dev.navids'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8

@@ -28,8 +28,8 @@ public class Main {
         options.addOption(Option.builder("tag")
                 .desc(String.format("the logging tag (default='%s')", InstrumentationBodyTransformer.INSTRUMENTATION_TAG))
                 .hasArg().argName("tag").build());
-        options.addOption(Option.builder("b").desc("enable logging methods' beginning").build());
-        options.addOption(Option.builder("e").desc("enable logging methods' ending").build());
+        options.addOption(Option.builder("b").desc("logs methods' beginning").build());
+        options.addOption(Option.builder("e").desc("logs methods' ending").build());
         options.addOption(Option.builder("l")
                 .desc("the list of methods (signature, subsignature, or name) to be instrumented separated by semicolon (default=all methods)").hasArg()
                 .argName("instrumented_methods").build());
