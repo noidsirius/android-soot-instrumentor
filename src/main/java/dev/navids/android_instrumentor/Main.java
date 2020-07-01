@@ -47,6 +47,8 @@ public class Main {
             CommandLine line = parser.parse(options, args);
             if (line.hasOption("platform"))
                 androidJar = line.getOptionValue("platform");
+            else if(System.getenv().containsKey("ANDROID_HOME"))
+                androidJar = System.getenv("ANDROID_HOME");
             String outputDir = line.getOptionValue("output");
             String apkPath = line.getOptionValue("apk");
             final ProcessManifest processManifest = new ProcessManifest(apkPath);

@@ -4,6 +4,7 @@
 
 ## Setup
 - Requires Java version below 9, e.g., 8.
+- You can set ANDROID_HOME environmental variable, e.g., `export ANDROID_HOME=~/Library/Android/sdk/platforms` for osx) or provide it to the instrumentor in run time.
 - Build the jar file: ``./gradlew clean jar`` (the jar is located in `build/libs/android-instrumentor-1.0-SNAPSHOT.jar`)
 
 ## Execute
