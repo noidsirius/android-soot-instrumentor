@@ -7,7 +7,6 @@ import soot.jimple.JimpleBody;
 import soot.jimple.Stmt;
 
 import java.util.*;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public abstract class InstrumentationBodyTransformer extends BodyTransformer {
@@ -41,10 +40,10 @@ public abstract class InstrumentationBodyTransformer extends BodyTransformer {
             while (i.hasNext()) {
                 Stmt stmt = (Stmt) i.next();
                 boolean injected = injectCode(stmt, jimpleBody);
-                if (injected) {
-                    System.out.println("-- Code Injected in " + body.getMethod().getSignature());
+//                if (injected) {
+//                    System.out.println("-- Code Injected in " + body.getMethod().getSignature());
 //                    break;
-                }
+//                }
             }
         }
     }

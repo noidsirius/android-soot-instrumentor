@@ -21,9 +21,10 @@ public class Instrumentor {
         bodyTransformers.forEach(bodyTransformer -> PackManager.v().getPack("jtp").add(new Transform("jtp.myAnalysis"+bodyTransformer.hashCode(), bodyTransformer)));
         PackManager.v().runPacks();
         PackManager.v().writeOutput();
+        System.out.println("The APK is instrumented");
     }
 
-    private static void initializeSoot(String output, String apk, String androidJAR) {
+    public static void initializeSoot(String output, String apk, String androidJAR) {
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_prepend_classpath(true);
         Options.v().set_validate(true);

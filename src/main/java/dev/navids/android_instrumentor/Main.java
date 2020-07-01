@@ -52,6 +52,8 @@ public class Main {
             final ProcessManifest processManifest = new ProcessManifest(apkPath);
             String instrumentationAddress = new File(outputDir).getAbsolutePath();
             String tag = InstrumentationBodyTransformer.INSTRUMENTATION_TAG;
+            if (line.hasOption("tag"))
+                tag = line.getOptionValue("tag");
             String packageName = processManifest.getPackageName();
             List<String> instrumentedMethodIdentifiers = null;
             if (line.hasOption("l"))
