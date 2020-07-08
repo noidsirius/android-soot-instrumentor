@@ -1,6 +1,6 @@
 # Android Instrumentor
-[![Build Status](https://travis-ci.com/noidsirius/android-instrumentor.svg?branch=master)](https://travis-ci.com/noidsirius/android-instrumentor)
-[![codecov](https://codecov.io/gh/noidsirius/android-instrumentor/branch/master/graph/badge.svg)](https://codecov.io/gh/noidsirius/android-instrumentor)
+[![Build Status](https://travis-ci.com/noidsirius/android-soot-instrumentor.svg?branch=master)](https://travis-ci.com/noidsirius/android-soot-instrumentor)
+[![codecov](https://codecov.io/gh/noidsirius/android-soot-instrumentor/branch/master/graph/badge.svg)](https://codecov.io/gh/noidsirius/android-soot-instrumentor)
 
 *Android Instrumentor* is an open-source tool for instrumenting Android APKs using [Soot](https://github.com/Sable/soot).   
 
